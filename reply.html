@@ -1,0 +1,14 @@
+{% extends 'PageHeader.html' %}
+{% block content %}
+<h2>Reply </h2>
+
+
+<form name="form1" method="post" action="/ReplyResSugg">
+        {% csrf_token %}
+<textarea name="TxtReply" rows="2" cols="30" required></textarea>
+    <br>
+    <br>
+    <input type="submit" value="submit" />
+
+</form>
+{% endblock %}

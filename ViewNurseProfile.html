@@ -1,0 +1,63 @@
+{% extends 'PageHeader.html' %}
+{% block content %}
+<head>
+    <style>
+            <style>
+        #cs {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            #cs td, #cs th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #cs tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #cs tr:hover {
+                background-color: #ddd;
+            }
+
+            #cs th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+            }
+    </style>
+</head>
+
+<table id="cs" >
+
+ <tr>
+    <th style="text-align:center"><h2>NURSE PROFILE</h2> </th>
+    <th> </th>
+  </tr>
+  {% for row in data %}
+    <tr>
+    <td style="text-align:right">Name</td>
+    <td>{{ row.1}}</td>
+  </tr>
+     <tr>
+    <td style="text-align:right">Address</td>
+    <td>{{ row.2}}</td>
+  </tr>
+    <tr>
+    <td style="text-align:right">Phone</td>
+    <td>{{ row.3}}</td>
+  </tr>
+     <tr>
+    <td style="text-align:right">Registration Number</td>
+    <td>{{ row.4}}</td>
+  </tr>
+    <tr>
+    <td style="text-align:right">City</td>
+    <td>{{ row.9}}</td>
+  </tr>
+
+      {% endfor %}
+</table>
+{% endblock %}
