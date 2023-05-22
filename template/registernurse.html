@@ -1,0 +1,46 @@
+{% extends 'PageHeader.html' %}
+{% block content %}
+<head>
+</head>
+<h2>Add FoodInspector</h2>
+<form id="form1" name="form1" method="post" >
+              {% csrf_token %}
+    <table id="cs">
+
+        <tr>
+            <th>Name:</th>
+            <td><input type="text" name="TxtName" autofocus required pattern="^[a-zA-Z]+( [a-zA-Z]+)*$" title="characters only"></td>
+        </tr>
+
+        <tr>
+            <th>  Address:</th>
+            <td> <textarea name="TxtAddress" required placeholder="Address"></textarea></td>
+        </tr>
+
+        <tr><th>Phone</th><td><input name="TxtPhone" type="text" pattern="[6-9]{1}[0-9]{9}" title="incorrect phone no" required placeholder="Phone"></td></tr>
+        <tr>
+            <th>  registration_no</th>
+            <td> <input type="text" name="registration_no"  required placeholder="registration_no"></td>
+        </tr>
+
+
+        <tr>
+            <th>nurse_id:</th>
+            <td> <input type="text" name="nurse_id" required placeholder="nurse_id"></td>
+        </tr>
+        <tr>
+            <th>password:</th>
+            <td> <input type="password" name="password"  required placeholder="password"></td>
+        </tr>
+            <tr>
+            <th>experience:</th>
+            <td> <input type="text" name="experience"  required placeholder="experience"></td>
+        </tr>
+
+        <tr>
+            <th>    </th>
+            <td> <input type="submit" value="Register" class="btn btn-default" /></td>
+
+    </table>
+</form>
+{% endblock %}

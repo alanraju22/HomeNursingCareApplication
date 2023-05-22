@@ -1,0 +1,48 @@
+{% extends 'PageHeader.html' %}
+{% block content %}
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+
+
+<form name="form1" method="post" action="/replyadmin2">
+    {% csrf_token %}
+   <input type="hidden" name="txtId" value="{{ data }}" />
+<table>
+  <tr>
+    <th> </th>
+    <th> </th>
+    <th> </th>
+  </tr>
+  <tr>
+    <td>Enter Details</td>
+    <td><textarea name="reply" rows="2" cols="30" required></textarea> </td>
+    <td>  </td>
+  </tr>
+     <tr>
+    <th> </th>
+    <th> <input type="submit"  value="Submit" style="background-color:#ff803a;border:1px solid #ff803a;border-radius:10px;color:#ffffff;display:inline-block;font-family:'Montserrat',Arial, Geneva, sans-serif;font-size:14px;font-weight:700;line-height:30px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none;mso-hide:all;" /> </th>
+    <th> </th>
+  </tr>
+
+</table>
+
+</form>
+{% endblock %}
+

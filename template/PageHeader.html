@@ -1,0 +1,105 @@
+{% load static %}
+<!--
+Template Name: Vallume
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>NURSE CARE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../static/Admin/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul class="nospace">
+        <li><a href="../AdminHomePage"><i class="fa fa-lg fa-home"></i></a></li>
+
+        <li><a href="../logout">LogOut</a></li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul class="nospace">
+        <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+        <li><i class="fa fa-envelope-o"></i> info@CNURSE CARE.com</li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <!-- ################################################################################################ -->
+  <div id="logo" class="fl_left">
+      <h1><a href="../AdminHomePage">NURSE CARE</a></h1>
+
+    </div>
+   <nav id="mainav" class="fl_right">
+      <ul class="clear">
+        <li class="active"><a href="../AdminHomePage">Home</a></li>
+
+
+        <li><a class="drop" href="../viewAllNewRequest">CARE PLAN</a>
+          <ul>
+            <li><a href="../Addcategory">ADD CAREPLAN</a></li>
+            <li><a href="../viewCategory">VIEW CAREPLAN</a></li>
+          </ul>
+        </li>
+
+        <li><a class="drop" href="../viewAllNewRequest">NURSE</a>
+          <ul>
+            <li><a href="../viewAllNewRequest">NEW REQUEST</a></li>
+            <li><a href="../viewnurseApprove">VIEW NURSES</a></li>
+          </ul>
+        </li>
+          <li><a class="drop" href="../patientenqueiry">PATIENT ENQUIRY</a>
+          <ul>
+            <li><a href="../patientenqueiry">Enquiry </a></li>
+             <li><a href="../view_approved_patient_enqueiry">Approved Enquiry</a></li>
+             <li><a href="../select_assigned_patient">Assigned List</a></li>
+          </ul>
+        <li><a class="" href="../nursequery">NURSE QUERY</a>
+        </li>
+
+          <li><a class="" href="../viewComplient">COMPLAINTS</a>
+        </li>
+
+
+         </li>
+          <li><a class="" href="../selectpatient">ASSIGN NURSE</a>
+        </li>
+
+        <li><a href="../logout">LogOut</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('../static/Admin/images/demo/backgrounds/food2.jpg');">
+  <div id="breadcrumb" class="hoc clear">
+    <!-- ################################################################################################ -->
+
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+{% block content %}
+{% endblock %}

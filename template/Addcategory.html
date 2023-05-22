@@ -1,0 +1,48 @@
+{% extends 'PageHeader.html' %}
+{% block content %}
+<head>
+    <style>
+        #cs {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            #cs td, #cs th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #cs tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #cs tr:hover {
+                background-color: #ddd;
+            }
+
+            #cs th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+            }
+    </style>
+</head>
+<h2>Care Plan</h2>
+<form id="form1" name="form1" method="post" >
+          {% csrf_token %}
+    <table id="cs">
+
+        <tr>
+            <th>Plane Name</th>
+            <td><input type="text" name="name" autofocus required></td>
+        </tr>
+
+
+        <tr>
+            <th></th>
+            <td> <input type="submit" value="Register" class="btn btn-default" /></td>
+
+    </table>
+</form>
+{% endblock %}
